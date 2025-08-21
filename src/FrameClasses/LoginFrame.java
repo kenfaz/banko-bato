@@ -168,31 +168,12 @@ public class LoginFrame {
 		
 		JLabel bankobato_icon_image = new JLabel("");
 		login__left_pane.setLayer(bankobato_icon_image, 4);
-//		bankobato_icon_image.setIcon(new ImageIcon("C:\\Users\\Khen David Famadico\\Downloads\\bank_logo_2-removebg-preview (1).png"));
 		bankobato_icon_image.setBounds(199, 10, 78, 66);
 		login__left_pane.add(bankobato_icon_image);
 		
    
 		bankobato_icon_image.setPreferredSize(new Dimension(75, 75)); // or any size you want
 
-        // Load original image
-//        BufferedImage originalImage = null;
-//		try {
-//			originalImage = ImageIO.read(new File("C:\\Users\\Khen David Famadico\\Downloads\\bankbato_icon.png"));
-//		} catch (IOException e1) {
-//			// TODO Auto-generated catch block
-//			e1.printStackTrace();
-//		}
-//
-//        // Resize the image to fit the label
-//        Image scaledImage = originalImage.getScaledInstance(
-//        		bankobato_icon_image.getPreferredSize().width,
-//        		bankobato_icon_image.getPreferredSize().height,
-//            Image.SCALE_SMOOTH
-//        );
-
-        // Set icon
-//        bankobato_icon_image.setIcon(new ImageIcon(scaledImage));
         
         JLabel person_icon = new JLabel("");
         login__left_pane.setLayer(person_icon, 3);
@@ -266,30 +247,10 @@ public class LoginFrame {
 		login_right_pane.setBackground(new Color(255, 255, 0));
 		login_right_pane.setBounds(470, 0, 516, 563);
 		frame.getContentPane().add(login_right_pane);
-		
-//        try {
-//            BufferedImage original_image = ImageIO.read(new File("C:\\Users\\Khen David Famadico\\Downloads\\background6.jpg"));
-//
-//            // Resize the image to fit JLabel's size
-//            Image scaledImage = original_image.getScaledInstance(
-//                    login_right_image_holder.getWidth(), login_right_image_holder.getHeight(), Image.SCALE_SMOOTH);
-//
-//            // In case label size is not set yet, use preferred size or manually set size
-//            // So we resize based on a fixed size or the frame’s known size
-//            scaledImage = original_image.getScaledInstance(600, 600, Image.SCALE_SMOOTH);
-//
-//            ImageIcon imageIcon = new ImageIcon(scaledImage);
-//            login_right_image_holder.setIcon(imageIcon);
-//
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-		
+			
 		// BATO IMAGE
 		JLabel bato_image = new JLabel("");
-//		bato_image.setIcon(new ImageIcon("C:\\Users\\Khen David Famadico\\Downloads\\bankobato.png"));
 		login_right_pane.setLayer(bato_image, 3);
-//		bato_image.setIcon(new ImageIcon("C:\\Users\\Khen David Famadico\\Downloads\\image-removebg-preview (3).png"));
 		bato_image.setBounds(55, 181, 451, 382);
 		login_right_pane.add(bato_image);
 		
@@ -312,3 +273,4 @@ public class LoginFrame {
         }
 	}
 }
+
